@@ -31,13 +31,8 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
-            laoreet est. Cras nec ultricies mi, et pharetra nibh. Cras maximus
-            augue sit amet orci lacinia, ac tempus lacus condimentum. Curabitur
-            sed neque lacinia, sollicitudin ante ac, maximus felis. Praesent ac
-            metus lectus. Sed aliquam eget eros id blandit. Nullam vestibulum
-            laoreet dolor
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg">
+            Simplify your path to success.<br />Together, we can cut through the noise and achieve your goals.
           </motion.p>
 
           {/* btn */}
@@ -49,7 +44,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='hidden xl:flex'
+            className='hidden xl:flex z-50'
           >
             <ProjectsBtn />
           </motion.div>
@@ -74,7 +69,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: 'easeInOut'}}
-          className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
+          className='w-full h-full max-w-[707px] max-h-[648px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
           <Avatar />
         </motion.div>
       </div>

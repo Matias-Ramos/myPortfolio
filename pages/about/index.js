@@ -7,15 +7,14 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
 } from "react-icons/fa";
+import {
+  FaGolang,
+} from "react-icons/fa6";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiTypescript,
 } from "react-icons/si";
 
 // components
@@ -40,62 +39,28 @@ const aboutData = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
+          <SiTypescript />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaGolang />,
         ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
+      }
     ],
   },
   {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Freelance developer',
+        stage: '2022 - 2024',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Network Analyst - Accenture',
+        stage: '2019 - 2021',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Asset mgmt. & Local support - Accenture',
+        stage: '2017 - 2019',
       },
     ],
   },
@@ -129,16 +94,16 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-              Captivation <span className="text-accent">stories</span> birth magnificent designs.
+              Design that takes your business to the <span className="text-accent">next level</span>.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)} 
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-lg"
           >
-              In 2022, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and customer use.
+              I started as a freelance developer in 2022. Since then, I've worked side by side with many entrepreneurs from various industries such as fitness, real estate, car dealerships, and more.
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -201,7 +166,7 @@ const About = () => {
               )
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start text-lg">
             {aboutData[index].info.map((item, itemIndex) => {
               return(
                 <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 ">
