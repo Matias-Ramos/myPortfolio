@@ -24,7 +24,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My service <span className="text-accent">.</span>
             </motion.h2>
 
             <motion.p
@@ -32,9 +32,9 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-lg"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Leveraging my expertise in front-end development and UI/UX design, I build high-performance, user-friendly websites that fit to your individual needs.
             </motion.p>
 
           </div>

@@ -32,7 +32,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg">
-            Simplify your path to success.<br />Together, we can cut through the noise and achieve your goals.
+            Simplify your path to success.<br />Let's cut through the noise and achieve your goals, together.
           </motion.p>
 
           {/* btn */}
