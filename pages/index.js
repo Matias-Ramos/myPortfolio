@@ -10,7 +10,7 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 h-full ">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* Title */}
@@ -19,7 +19,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 sm:text-xs z-10 lg:mb-0"
           >
             Transforming Ideas <br />
             Into <span className="text-accent">Digital Reality</span>
@@ -31,7 +31,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 text-lg">
             Simplify your path to success.<br />Let's cut through the noise and achieve your goals, together.
           </motion.p>
 
@@ -55,7 +55,7 @@ const Home = () => {
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
 
         {/* bg image */}
-        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div>
+        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 z-0'></div>
 
         {/* particles */}
         <div>
