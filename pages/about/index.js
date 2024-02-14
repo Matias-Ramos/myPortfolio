@@ -44,7 +44,7 @@ const aboutData = [
           <SiNextdotjs />,
           <FaGolang />,
         ],
-      }
+      },
     ],
   },
   {
@@ -85,7 +85,7 @@ const About = () => {
       <div className="md:container xs:w-5/6 mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
 
         {/* text */}
-        <div className="flex flex-1 flex-col justify-center relative">
+        <div className="flex flex-1 flex-col justify-start h-full relative">
           <motion.h2 
             variants={fadeIn('right', 0.2)} 
             initial="hidden"
