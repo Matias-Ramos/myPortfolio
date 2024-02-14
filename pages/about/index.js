@@ -70,10 +70,9 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left z-20">
       <Circles />
       <motion.div 
         variants={fadeIn('right', 0.2)} 
@@ -83,10 +82,10 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[370px]">
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="md:container xs:w-5/6 mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
 
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center relative">
+        <div className="flex flex-1 flex-col justify-center relative">
           <motion.h2 
             variants={fadeIn('right', 0.2)} 
             initial="hidden"
@@ -101,9 +100,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-lg"
+            className="max-w-[500px]  mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-lg"
           >
-              I started as a freelance developer in 2022. Since then, I've worked side by side with many entrepreneurs from various industries such as fitness, real estate, car dealerships, and more.
+              In 2022, I launched my freelance development career, partnering with passionate entrepreneurs across <span className="font-semibold">diverse industries</span>, including but not limited to a Colombian fitness studios, a real estate agency, and a car dealership from Buenos Aires.
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -126,7 +125,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={3} delay={1.5} duration={5} /> +
+                  <CountUp start={0} end={4} delay={1.5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Satisfied clients
@@ -151,7 +150,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] xs:pb-28 sm:pb-28 lg:pb-28 lg:align-top h-full"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 relative z-20">
             {aboutData.map((item, itemIndex) => {
@@ -178,7 +177,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex)=>{
                       return(
-                        <div className="text-2xl text-white ">{icon}</div>
+                        <div className="text-2xl text-white" key={itemIndex}>{icon}</div>
                       )
                     })}
                   </div>

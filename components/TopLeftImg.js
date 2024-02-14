@@ -11,6 +11,7 @@ const TopLeftImg = () => {
         src="/top-left-img.png"
         width={400}
         height={400}
+        priority={false}
         alt="decorative img"
       />
     </div>
