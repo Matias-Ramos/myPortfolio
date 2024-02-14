@@ -13,7 +13,7 @@ const Contact = () => {
     <div className='h-full bg-primary/30'>
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         {/* text & form */}
-        <div className='flex flex-col w-full max-w-[700px]'>
+        <div className='flex flex-col w-full max-w-[700px] xs:mt-60 lg:mt-44'>
           {/* text */}
           <motion.h2 
             variants={fadeIn("up", 0.2)}
@@ -30,7 +30,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='flex-1 flex flex-col gap-6 w-full mx-auto'
+            className='flex-1 flex flex-col gap-6 w-full mx-auto xs:mb-28'
           >
             {/* group */}
             <div className='flex gap-x-6 w-full'>
