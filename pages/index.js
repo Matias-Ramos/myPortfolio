@@ -31,7 +31,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-20 text-lg">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-12 text-lg">
             Simplify your path to success.<br />Let's cut through the noise and achieve your goals, together.
           </motion.p>
 

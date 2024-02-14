@@ -13,9 +13,9 @@ const Services = () => {
     <div className="h-full bg-primary/30 flex items-center py-36 ">
       <Circles />
       <div className="container mx-auto mt-56 xs:mt-96 xl:mt-0">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col xl:flex-row gap-x-8 xl:mt-32 sm:mb-32 xs:mb-28 xs:mt-60 sm:mt-11 md:mt-0">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left lg:mt-16 mb-4 xl:mb-0">
 
             <motion.h2
               variants={fadeIn('up', 0.2)}
@@ -32,7 +32,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-lg"
+              className="mb-4 max-w-[400px] md:max-w-[475px] mx-auto lg:mx-0 text-lg"
             >
               Leveraging my expertise in front-end development and UI/UX design, I build high-performance, user-friendly websites that fit to your individual needs.
             </motion.p>
@@ -45,7 +45,7 @@ const Services = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[60%] md:pb-20"
+            className="w-full xl:max-w-[60%] lg:pb-0"
           >
             <ServiceSlider />
           </motion.div>
