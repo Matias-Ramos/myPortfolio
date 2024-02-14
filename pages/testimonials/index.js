@@ -7,7 +7,7 @@ import {fadeIn} from '../../variants';
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
-      <div className="md:container mx-auto h-full flex flex-col justify-center min-w-10/12 xs:mt-16 ">
+      <div className="md:container mx-auto h-full flex flex-col justify-center min-w-10/12 xs:mt-16 xl:mt-4 ">
         {/* title */}
         <motion.h2
           variants={fadeIn('up', 0.2)}
