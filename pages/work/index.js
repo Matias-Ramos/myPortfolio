@@ -1,3 +1,7 @@
+// hooks
+import { useState } from "react";
+// data 
+import projectList from "./projectList";
 // components
 import WorkSlider from "../../components/WorkSlider";
 import Bulb from '../../components/Bulb';
@@ -7,8 +11,14 @@ import OffCanvas from "../../components/OffCanvas";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 
-
 const Work = () => {
+
+  // OffCanvas mgmt.
+  const [isOpen, setIsOpen] = useState(false);
+  const handleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center ">
       <OffCanvas />
@@ -38,7 +48,7 @@ const Work = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%] md:mb-28"
           >
-            <WorkSlider />
+            <WorkSlider projectList={projectList} handleDrawer={handleDrawer}/>
           </motion.div>
         </div>
       </div>

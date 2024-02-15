@@ -16,35 +16,99 @@ import {
     SiTypescript,
 } from "react-icons/si";
 
-const projectList = [
-  {
-    link: "https://mjconstrucciones.ar",
-    frontend: [<FaHtml5 />, <FaCss3 />, <FaJs />],
-  },
-  {
-    link: "https://orautomotores.com.ar",
-    frontend: [<FaReact />, <FaJs />],
-    database: [<SiFirebase />],
-  },
-  {
-    link: "https://delsurprops.com.ar",
-    frontend: [<FaReact />, <FaJs />],
-    backend: [<FaGolang />],
-    database: [<SiPostgresql />],
-    hosting: [<FaLinux />, <FaCloud />],
-  },
-  {
-    link: "https://elevateherfitness.com",
-    frontend: [<FaReact />, <FaJs />],
-  },
-  {
-    link: "https://fedesantos.com",
-    frontend: [<FaReact />, <SiTypescript />],
-  },
-  {
-    link: "https://matiasramos.com",
-    frontend: [<SiNextdotjs />, <FaJs />],
-  },
-];
+const projectList = {
+  // group each stack in 4
+  stack: [
+    {
+      projects: [
+        {
+          title: "www.mjconstrucciones.ar",
+          link: "https://mjconstrucciones.ar",
+          img: '/thumb1.jpg',
+          frontend: [<FaHtml5 />, <FaCss3 />, <FaJs />],
+        },
+        {
+          title: "www.orautomotores.com.ar",
+          link: "https://orautomotores.com.ar",
+          img: '/thumb2.jpg',
+          frontend: [<FaReact />, <FaJs />],
+          database: [<SiFirebase />],
+        },
+        {
+          title: "www.delsurprops.com.ar",
+          link: "https://delsurprops.com.ar",
+          img: '/thumb3.jpg',
+          frontend: [<FaReact />, <FaJs />],
+          backend: [<FaGolang />],
+          database: [<SiPostgresql />],
+          hosting: [<FaLinux />, <FaCloud />],
+        },
+        {
+          title: "www.elevateherfitness.com",
+          link: "https://elevateherfitness.com",
+          img: '/thumb4.jpg',
+          frontend: [<FaReact />, <FaJs />],
+        },
+      ],
+      projects : [
+        {
+          title: "www.fedesantos.com",
+          link: "https://fedesantos.com",
+          img: '/thumb1.jpg',
+          frontend: [<FaReact />, <SiTypescript />],
+        },
+        {
+          title: "www.matiasramos.com",
+          link: "https://matiasramos.com",
+          img: '/thumb2.jpg',
+          frontend: [<SiNextdotjs />, <FaJs />],
+        },
+      ]
+    },
+  ]
+}
+
+// const projectList = [
+//   {
+//     title: "www.mjconstrucciones.ar",
+//     link: "https://mjconstrucciones.ar",
+//     img: '/thumb1.jpg',
+//     frontend: [<FaHtml5 />, <FaCss3 />, <FaJs />],
+//   },
+//   {
+//     title: "www.orautomotores.com.ar",
+//     link: "https://orautomotores.com.ar",
+//     img: '/thumb2.jpg',
+//     frontend: [<FaReact />, <FaJs />],
+//     database: [<SiFirebase />],
+//   },
+//   {
+//     title: "www.delsurprops.com.ar",
+//     link: "https://delsurprops.com.ar",
+//     img: '/thumb3.jpg',
+//     frontend: [<FaReact />, <FaJs />],
+//     backend: [<FaGolang />],
+//     database: [<SiPostgresql />],
+//     hosting: [<FaLinux />, <FaCloud />],
+//   },
+//   {
+//     title: "www.elevateherfitness.com",
+//     link: "https://elevateherfitness.com",
+//     img: '/thumb4.jpg',
+//     frontend: [<FaReact />, <FaJs />],
+//   },
+//   {
+//     title: "www.fedesantos.com",
+//     link: "https://fedesantos.com",
+//     img: '/thumb1.jpg',
+//     frontend: [<FaReact />, <SiTypescript />],
+//   },
+//   {
+//     title: "www.matiasramos.com",
+//     link: "https://matiasramos.com",
+//     img: '/thumb2.jpg',
+//     frontend: [<SiNextdotjs />, <FaJs />],
+//   },
+// ];
 
 export default projectList;

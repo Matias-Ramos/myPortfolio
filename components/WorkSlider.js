@@ -19,6 +19,7 @@ const workSlides = {
           title: 'title',
           path: '/thumb4.jpg',
         },
+        
       ],
     },
     {
@@ -50,7 +51,7 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import {  Pagination } from 'swiper';
-
+import projectList from '../pages/work/projectList';
 // icons
 import { BsArrowRight } from 'react-icons/bs'
 
@@ -68,16 +69,12 @@ const WorkSlider = () => {
       {workSlides.slides.map((slide, index) => {
         return(
           <SwiperSlide key={index}>
-            <div
-              className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'
-              role="button"
-            >
+            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer '>
               {slide.images.map((image, index) => { 
                 return(
                   <div 
                     key={index}
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group'
-                    
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
