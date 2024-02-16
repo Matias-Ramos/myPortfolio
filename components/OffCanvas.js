@@ -1,6 +1,13 @@
 "use client";
 import { useEffect } from "react";
 import { IconContext } from "react-icons";
+// Tooltip
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
 
@@ -59,12 +66,18 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
                             <span> Frontend: </span>
                             <div className="flex flex-row gap-x-3 my-1">
                                 {project.frontend.map((icon, index) => (
-                                    <IconContext.Provider
-                                        value={{ size: "2rem" }}
-                                        key={index}
-                                    >
-                                        {icon}
-                                    </IconContext.Provider>
+                                    <TooltipProvider key={index} delayDuration={25}>
+                                        <Tooltip>
+                                            <TooltipTrigger>
+                                                <IconContext.Provider value={{ size: "2rem" }}>
+                                                    {icon}
+                                                </IconContext.Provider>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Add to library</p>
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    </TooltipProvider>
                                 ))}
                             </div>
                         </div>
