@@ -35,12 +35,27 @@ module.exports = {
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
       },
-      animation: {
-        'spin-slow': 'spin 6s linear infinite',
-      },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
+      },
+      transitionDuration: {
+        '6000': '6000ms',
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      keyframes: {
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
       },
     },
   },
@@ -49,5 +64,8 @@ module.exports = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [
+    require('tailwind-scrollbar'),
+    require("tailwindcss-animate"),
+  ],
 };
