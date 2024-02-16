@@ -17,8 +17,8 @@ import {
 } from "react-icons/si";
 
 const projectList = {
-  // group each stack in 4
-  stack: [
+  // group each slide in 4
+  slides: [
     {
       projects: [
         {
@@ -49,7 +49,9 @@ const projectList = {
           img: '/thumb4.jpg',
           frontend: [<FaReact />, <FaJs />],
         },
-      ],
+      ]
+    },
+    {
       projects : [
         {
           title: "www.fedesantos.com",
