@@ -15,13 +15,19 @@ const Work = () => {
 
   // OffCanvas mgmt.
   const [isOpen, setIsOpen] = useState(false);
-  const handleDrawer = () => {
+  const [projectDetail, setProjectDetail] = useState(false);
+  const handleDrawer = (project) => {
     setIsOpen(!isOpen);
+    setProjectDetail(project)
   };
 
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center ">
-      <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <OffCanvas
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        projectDetail={projectDetail}
+      />
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8 sm:mt-64">

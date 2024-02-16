@@ -1,28 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useEffect } from "react";
+import { IconContext } from "react-icons";
 
-const OffCanvas = ({isOpen, setIsOpen}) => {
-    // const [isOpen, setIsOpen] = useState(false);
-
-    const sideList = [
-        {
-            title: "item 1",
-        },
-        {
-            title: "item 2",
-        },
-        {
-            title: "item 3",
-        },
-        {
-            title: "item 4",
-        },
-    ];
-
-    // const handleDrawer = () => {
-    //     setIsOpen(!isOpen);
-    // };
+const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
 
     useEffect(() => {
         const handleEscKeyPress = (e) => {
@@ -45,15 +25,7 @@ const OffCanvas = ({isOpen, setIsOpen}) => {
     }, [isOpen]);
 
     return (
-        <nav className="flex  items-center justify-between px-6 h-16 bg-white text-gray-700 border-b border-gray-200 z-30">
-
-
-            {/* Triggering button */}
-            {/* <div className="flex items-center">
-                <button className="mr-2" aria-label="Open Menu" onClick={handleDrawer}>
-                    <GiHamburgerMenu className="text-3xl" />
-                </button>
-            </div> */}
+        <nav className="flex items-center justify-between px-6 h-16 text-white z-30">
 
 
             {/* Back layer, with less opacity */}
@@ -70,27 +42,79 @@ const OffCanvas = ({isOpen, setIsOpen}) => {
 
             {/* OffCanvas */}
             <aside
-                className={`transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                className={`transform top-0 left-0 w-64 bg-tertiary fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
-
                 {/* Header */}
                 <div className="flex w-full justify-center p-4 border-b">
                     <span className="h-auto">
-                        www.projectDomain.com
+                        {project.title}
                     </span>
                 </div>
 
                 {/* Body */}
-                {sideList.map(({ title }, index) => {
-                    return (
-                        <span
-                            key={index}
-                            className="flex items-center p-4"
-                        >
-                            <span>{title}</span>
-                        </span>
-                    );
-                })}
+                <div className="p-4">
+
+                    {project.frontend &&
+                        <div className="mb-4">
+                            <span> Frontend: </span>
+                            <div className="flex flex-row gap-x-3 my-1">
+                                {project.frontend.map((icon, index) => (
+                                    <IconContext.Provider
+                                        value={{ size: "2rem" }}
+                                        key={index}
+                                    >
+                                        {icon}
+                                    </IconContext.Provider>
+                                ))}
+                            </div>
+                        </div>
+                    }
+                    {project.backend &&
+                        <div className="mb-4">
+                            <span> Backend: </span>
+                            <div className="flex flex-row gap-x-3 my-1">
+                                {project.backend.map((icon, index) => (
+                                    <IconContext.Provider
+                                        value={{ size: "2rem" }}
+                                        key={index}
+                                    >
+                                        {icon}
+                                    </IconContext.Provider>
+                                ))}
+                            </div>
+                        </div>
+                    }
+                    {project.database &&
+                        <div className="mb-4">
+                            <span> Database: </span>
+                            <div className="flex flex-row gap-x-3 my-1">
+                                {project.database.map((icon, index) => (
+                                    <IconContext.Provider
+                                        value={{ size: "2rem" }}
+                                        key={index}
+                                    >
+                                        {icon}
+                                    </IconContext.Provider>
+                                ))}
+                            </div>
+                        </div>
+                    }
+                    {project.hosting &&
+                        <div className="mb-4">
+                            <span> Hosting: </span>
+                            <div className="flex flex-row gap-x-3 my-1">
+                                {project.hosting.map((icon, index) => (
+                                    <IconContext.Provider
+                                        value={{ size: "2rem" }}
+                                        key={index}
+                                    >
+                                        {icon}
+                                    </IconContext.Provider>
+                                ))}
+                            </div>
+                        </div>
+                    }
+                </div>
 
                 {/* Footer */}
                 <div className="fixed bottom-0 w-full">

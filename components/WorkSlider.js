@@ -31,7 +31,7 @@ const WorkSlider = ({handleDrawer}) => {
                     key={index}
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group '
                     role="button"
-                    onClick={()=>handleDrawer()}
+                    onClick={()=>handleDrawer(project)}
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
