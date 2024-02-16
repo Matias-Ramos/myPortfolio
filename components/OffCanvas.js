@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from "react";
-import { IconContext } from "react-icons";
 // Tooltip Icon
 import TooltipIcon from "./TooltipIcon";
 
