@@ -1,15 +1,29 @@
 "use client";
 import { useEffect } from "react";
 import { IconContext } from "react-icons";
-// Tooltip
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
+// Tooltip Icon
+import TooltipIcon from "./TooltipIcon";
+
+
+const renderProjectDetails = (propertyName, data) => {
+    if (!data) {
+      return null; // Return early if data is empty or undefined
+    }
+
+    return (
+      <div className="mb-4">
+        <span>{propertyName}: </span>
+        <div className="flex flex-row gap-x-3 my-1">
+          {data.map((language, index) => (
+            <TooltipIcon language={language} key={index} />
+          ))}
+        </div>
+      </div>
+    );
+  };
 
 const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
+
 
     useEffect(() => {
         const handleEscKeyPress = (e) => {
@@ -32,8 +46,8 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
     }, [isOpen]);
 
     return (
-        <nav className="flex items-center justify-between px-6 h-16 text-white z-30">
 
+        <nav className="flex items-center justify-between px-6 h-16 text-white z-30">
 
             {/* Back layer, with less opacity */}
             {isOpen && (
@@ -60,24 +74,20 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
 
                 {/* Body */}
                 <div className="p-4">
-
-                    {project.frontend &&
+                    {/* Use renderProjectDetails function for each property */}
+                    {renderProjectDetails("Frontend", project.frontend)}
+                    {renderProjectDetails("Backend", project.backend)}
+                    {renderProjectDetails("Database", project.database)}
+                    {renderProjectDetails("Hosting", project.hosting)}
+                </div>
+                <div className="p-4">
+                    
+                    {/* {project.frontend &&
                         <div className="mb-4">
                             <span> Frontend: </span>
                             <div className="flex flex-row gap-x-3 my-1">
-                                {project.frontend.map((icon, index) => (
-                                    <TooltipProvider key={index} delayDuration={25}>
-                                        <Tooltip>
-                                            <TooltipTrigger>
-                                                <IconContext.Provider value={{ size: "2rem" }}>
-                                                    {icon}
-                                                </IconContext.Provider>
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Add to library</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
+                                {project.frontend.map((language, index) => (
+                                    <TooltipIcon language={language} key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -86,13 +96,8 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
                         <div className="mb-4">
                             <span> Backend: </span>
                             <div className="flex flex-row gap-x-3 my-1">
-                                {project.backend.map((icon, index) => (
-                                    <IconContext.Provider
-                                        value={{ size: "2rem" }}
-                                        key={index}
-                                    >
-                                        {icon}
-                                    </IconContext.Provider>
+                                {project.backend.map((language, index) => (
+                                    <TooltipIcon language={language} key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -101,13 +106,8 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
                         <div className="mb-4">
                             <span> Database: </span>
                             <div className="flex flex-row gap-x-3 my-1">
-                                {project.database.map((icon, index) => (
-                                    <IconContext.Provider
-                                        value={{ size: "2rem" }}
-                                        key={index}
-                                    >
-                                        {icon}
-                                    </IconContext.Provider>
+                                {project.database.map((language, index) => (
+                                    <TooltipIcon language={language} key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -116,17 +116,12 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
                         <div className="mb-4">
                             <span> Hosting: </span>
                             <div className="flex flex-row gap-x-3 my-1">
-                                {project.hosting.map((icon, index) => (
-                                    <IconContext.Provider
-                                        value={{ size: "2rem" }}
-                                        key={index}
-                                    >
-                                        {icon}
-                                    </IconContext.Provider>
+                                {project.hosting.map((language, index) => (
+                                    <TooltipIcon language={language} key={index}/>
                                 ))}
                             </div>
                         </div>
-                    }
+                    } */}
                 </div>
 
                 {/* Footer */}
