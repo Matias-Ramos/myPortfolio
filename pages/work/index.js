@@ -21,7 +21,7 @@ const Work = () => {
 
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center ">
-      <OffCanvas />
+      <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8 sm:mt-64">
@@ -48,7 +48,7 @@ const Work = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%] md:mb-28"
           >
-            <WorkSlider projectList={projectList} handleDrawer={handleDrawer}/>
+            <WorkSlider handleDrawer={handleDrawer}/>
           </motion.div>
         </div>
       </div>

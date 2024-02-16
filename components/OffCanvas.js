@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const OffCanvas = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const OffCanvas = ({isOpen, setIsOpen}) => {
+    // const [isOpen, setIsOpen] = useState(false);
 
     const sideList = [
         {
@@ -20,9 +20,9 @@ const OffCanvas = () => {
         },
     ];
 
-    const handleDrawer = () => {
-        setIsOpen(!isOpen);
-    };
+    // const handleDrawer = () => {
+    //     setIsOpen(!isOpen);
+    // };
 
     useEffect(() => {
         const handleEscKeyPress = (e) => {
@@ -49,11 +49,11 @@ const OffCanvas = () => {
 
 
             {/* Triggering button */}
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
                 <button className="mr-2" aria-label="Open Menu" onClick={handleDrawer}>
                     <GiHamburgerMenu className="text-3xl" />
                 </button>
-            </div>
+            </div> */}
 
 
             {/* Back layer, with less opacity */}

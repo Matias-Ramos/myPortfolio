@@ -15,6 +15,7 @@ import {
 import {
   SiNextdotjs,
   SiTypescript,
+  SiMysql ,
 } from "react-icons/si";
 
 // components
@@ -43,6 +44,7 @@ const aboutData = [
           <FaReact />,
           <SiNextdotjs />,
           <FaGolang />,
+          <SiMysql />,
         ],
       },
     ],

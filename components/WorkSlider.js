@@ -1,3 +1,4 @@
+'use client'
 // data
 import projectList from '../pages/work/projectList';
 // Swiper Components
@@ -11,8 +12,9 @@ import { BsArrowRight } from 'react-icons/bs'
 // Components
 import Image from 'next/image';
 
-const WorkSlider = () => {
+const WorkSlider = ({handleDrawer}) => {
   return(
+    <>
     <Swiper 
       spaceBetween={10}
       pagination={{ clickable: true }}
@@ -27,7 +29,9 @@ const WorkSlider = () => {
                 return(
                   <div 
                     key={index}
-                    className='relative rounded-lg overflow-hidden flex items-center justify-center group'
+                    className='relative rounded-lg overflow-hidden flex items-center justify-center group '
+                    role="button"
+                    onClick={()=>handleDrawer()}
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
@@ -54,6 +58,7 @@ const WorkSlider = () => {
         )
       })}
     </Swiper>
+    </>
   )
 }
 
