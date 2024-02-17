@@ -1,17 +1,19 @@
 import Image from "next/image";
+// Styles
+const containerStyle = "hidden xl:flex xl:max-w-none";
+const imgStyle = "translate-z-0 w-full h-full";
 
-const Avatar = () => {
-  return (
-    <div className="hidden xl:flex xl:max-w-none">
-      <Image
-        src={"/avatar.png"}
-        width={737}
-        height={678}
-        alt="Matias picture"
-        className="translate-z-0 w-full h-full"
-      />
-    </div>
-  );
-};
+const Avatar = () => (
+  <div className={containerStyle}>
+    <Image
+      src={"/avatar.png"}
+      width={737}
+      height={678}
+      alt="Matias picture"
+      className={imgStyle}
+    />
+  </div>
+)
+
 
 export default Avatar;
