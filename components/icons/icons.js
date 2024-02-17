@@ -1,4 +1,5 @@
 // icons
+import { FaGolang } from "react-icons/fa6";
 import {
     FaCloud,
     FaCss3,
@@ -6,17 +7,15 @@ import {
     FaJs,
     FaLinux,
     FaReact,
-  } from "react-icons/fa";
-  import { FaGolang } from "react-icons/fa6";
-  
-  import {
+} from "react-icons/fa";
+import {
     SiFirebase,
     SiNextdotjs,
     SiTypescript,
     SiPostgresql,
     SiMysql,
-  } from "react-icons/si";
-  
+} from "react-icons/si";
+
 export const html = {
     icon: <FaHtml5 />,
     name: "HTML"
@@ -63,6 +62,6 @@ export const typescript = {
 }
 export const next = {
     icon: <SiNextdotjs />,
-    name: "Next" 
+    name: "Next"
 }
 
