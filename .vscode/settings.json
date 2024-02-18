@@ -21,5 +21,6 @@
         "list.hoverBackground": "#272727",
         "terminal.background": "#0F0F0F"
     },
-    "reactSnippets.settings.importReactOnTop": false
+    "reactSnippets.settings.importReactOnTop": false,
+    "editor.wordWrap": "on"
 }

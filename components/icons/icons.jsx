@@ -7,13 +7,13 @@ import {
     FaJs,
     FaLinux,
     FaReact,
+    FaDatabase,
 } from "react-icons/fa";
 import {
     SiFirebase,
     SiNextdotjs,
     SiTypescript,
     SiPostgresql,
-    SiMysql,
 } from "react-icons/si";
 
 export const html = {
@@ -44,8 +44,8 @@ export const postgres = {
     icon: <SiPostgresql />,
     name: "PostgreSql"
 }
-export const mysql = {
-    icon: <SiMysql />,
+export const sql = {
+    icon: <FaDatabase />,
     name: "SQL"
 }
 export const linux = {
