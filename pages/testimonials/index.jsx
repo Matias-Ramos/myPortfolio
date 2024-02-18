@@ -1,5 +1,5 @@
 // components
-import TestimonialSlider from "../../components/TestimonialSlider";
+import TestimonialSlider from "./TestimonialSlider";
 // animation
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';

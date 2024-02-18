@@ -1,12 +1,10 @@
 // hooks
 import { useState } from "react";
-// data 
-import projectList from "./projectList";
 // components
-import WorkSlider from "../../components/WorkSlider";
+import WorkSlider from "./WorkSlider";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
-import OffCanvas from "../../components/OffCanvas";
+import OffCanvas from "../../components/offCanvas/OffCanvas";
 // animation
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';

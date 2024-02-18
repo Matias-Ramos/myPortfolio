@@ -1,6 +1,6 @@
 // Components
 import Nav from "./nav/Nav";
-import Header from "./Header";
+import Header from "./header/Header";
 import TopLeftImg from "./TopLeftImg";
 
 // Font settings
