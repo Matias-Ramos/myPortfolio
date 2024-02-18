@@ -2,13 +2,12 @@
 import testimonialData from './testimonialData';
 // Components
 import Reviewer from './Reviewer';
-// Swiper Components
+import Quote from './Quote';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Navigation, Pagination } from 'swiper';
-import Quote from './Quote';
 // Styles
 const swiperSlideStyle = 'flex flex-col items-center md:flex-row gap-x-8 h-full px-16 '
 
