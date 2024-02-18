@@ -31,7 +31,7 @@ const Slider = () => (
         640: {
           slidesPerView: 2,
           spaceBetween: 15
-        }
+        },
       }}
       freeMode={true}
       pagination={{ clickable: true }}

@@ -3,7 +3,7 @@ import { useState } from "react";
 // components
 import Header from "./Header";
 import WorkSlider from "./WorkSlider";
-import OffCanvas from "../../components/offCanvas/OffCanvas";
+import OffCanvas from "./offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 // Styles

@@ -6,7 +6,9 @@ import { useEffect } from "react";
 import ProjectDetails from "./ProjectDetails";
 // Styles
 import classNames from "classnames";
-const containerStyle = "flex items-center justify-between px-6 h-16 text-white z-30";
+import Header from "./Header";
+import Footer from "./Footer";
+const containerStyle = "flex items-center justify-between text-white z-40";
 const bckgOuterCtSt = "z-20 fixed inset-0 transition-opacity";
 const bckgInnerCtSt = "absolute inset-0 bg-black opacity-50"
 
@@ -57,17 +59,7 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
             {/* OffCanvas */}
             <aside className={getAsideClasses(isOpen)}>
 
-                {/* Header */}
-                <div className="flex w-full justify-center p-4 border-b">
-                        <a 
-                            href={project.link}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            className="h-auto"
-                        >
-                            {project.title}
-                        </a>
-                </div>
+                <Header project={project} />
 
                 {/* Body */}
                 <div className="p-4">
@@ -77,12 +69,8 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
                     {ProjectDetails("Hosting", project.hosting)}
                 </div>
 
-                {/* Footer */}
-                <div className="fixed bottom-0 w-full">
-                    <div className="flex items-center p-4">
-                        <span>Project #{project.id}</span>
-                    </div>
-                </div>
+                <Footer projectId={project.id} />
+
             </aside>
         </div>
     );

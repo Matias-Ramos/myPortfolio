@@ -15,22 +15,28 @@ import {
 const projectList = {
   slides: [
     {
-      // set 4 project per "projects" array
+      // each projects array has capacity for 4 objects.
       projects: [
         {
-          id: 1,
-          title: "www.mjconstrucciones.ar",
-          link: "https://mjconstrucciones.ar",
-          img: '/thumb1.jpg',
-          frontend: [html, css, javascript],
+          id: 6,
+          title: "www.matiasramos.com",
+          link: "https://matiasramos.com",
+          img: '/thumb2.jpg',
+          frontend: [next, javascript],
         },
         {
-          id: 2,
-          title: "www.orautomotores.com.ar",
-          link: "https://orautomotores.com.ar",
-          img: '/thumb2.jpg',
+          id: 5,
+          title: "www.fedesantos.com",
+          link: "https://fedesantos.com",
+          img: '/thumb1.jpg',
+          frontend: [react, typescript],
+        },
+        {
+          id: 4,
+          title: "www.elevateherfitness.com",
+          link: "https://elevateherfitness.com",
+          img: '/thumb4.jpg',
           frontend: [react, javascript],
-          database: [firebase],
         },
         {
           id: 3,
@@ -42,34 +48,27 @@ const projectList = {
           database: [postgres],
           hosting: [linux, cloud],
         },
-        {
-          id: 4,
-          title: "www.elevateherfitness.com",
-          link: "https://elevateherfitness.com",
-          img: '/thumb4.jpg',
-          frontend: [react, javascript],
-        },
-      ]
+      ],
     },
     {
       projects: [
         {
-          id: 5,
-          title: "www.fedesantos.com",
-          link: "https://fedesantos.com",
-          img: '/thumb1.jpg',
-          frontend: [react, typescript],
+          id: 2,
+          title: "www.orautomotores.com.ar",
+          link: "https://orautomotores.com.ar",
+          img: '/thumb2.jpg',
+          frontend: [react, javascript],
+          database: [firebase],
         },
         {
-          id: 6,
-          title: "www.matiasramos.com",
-          link: "https://matiasramos.com",
-          img: '/thumb2.jpg',
-          frontend: [next, javascript],
+          id: 1,
+          title: "www.mjconstrucciones.ar",
+          link: "https://mjconstrucciones.ar",
+          img: '/thumb1.jpg',
+          frontend: [html, css, javascript],
         },
-      ]
+      ],
     },
-  ]
-}
-
+  ],
+};
 export default projectList;

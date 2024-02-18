@@ -14,7 +14,7 @@ const aboutData = [
         title: 'skills',
         info: [
             {
-                title: 'Web Development',
+                title: 'Frontend',
                 icons: [
                     html,
                     css,
@@ -22,6 +22,11 @@ const aboutData = [
                     typescript,
                     react,
                     next,
+                ],
+            },
+            {
+                title: 'Backend',
+                icons: [
                     golang,
                     sql,
                 ],

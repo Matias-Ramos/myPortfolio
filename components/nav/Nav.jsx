@@ -42,7 +42,9 @@ const containerStyling = `
   backdrop-blur-sm
   text-3xl
   xl:text-xl
-  xl:rounded-full`;
+  xl:rounded-full
+  z-30
+  `;
 const linkBaseStyles = `
   relative
   flex
