@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
-import { FreeMode, Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 // animation
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
@@ -33,9 +33,8 @@ const Slider = () => (
           spaceBetween: 15
         },
       }}
-      freeMode={true}
       pagination={{ clickable: true }}
-      modules={[FreeMode, Pagination]}
+      modules={[Pagination]}
       className={swiperStyle}
     >
       {serviceData.map((item, index) => (
