@@ -1,6 +1,6 @@
 const testimonialData = [
     {
-        image: '/aRestrepo.png',
+        image: '/aRestrepo2.png',
         name: 'Ana Restrepo',
         role: 'ElevateHer',
         message:
