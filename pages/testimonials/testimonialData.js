@@ -1,22 +1,22 @@
 const testimonialData = [
     {
-        image: '/t-avt-1.png',
-        name: 'Anne Smith',
-        role: 'Customer',
+        image: '/aRestrepo.png',
+        name: 'Ana Restrepo',
+        role: 'ElevateHer',
+        message:
+            'Con Matías fue muy fácil y rápido desarrollar la landing page. Muy atento y conocedor del proceso, siempre estuvo al tanto y respetó los tiempos acordados desde el principio y muy profesional. Lo recomiendo 100%',
+    },
+    {
+        image: '/fSantos.png',
+        name: 'Federico Santos',
+        role: 'Campamento de Ventas',
         message:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
     {
-        image: '/t-avt-2.png',
-        name: 'Jane Doe',
-        role: 'Customer',
-        message:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
-    },
-    {
-        image: '/t-avt-3.png',
-        name: 'Jhon Doe',
-        role: 'Customer',
+        image: '/mChindi.png',
+        name: 'Matias Chindamo',
+        role: 'MJ Construcciones',
         message:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
