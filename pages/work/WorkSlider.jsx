@@ -13,39 +13,73 @@ import { Pagination } from 'swiper';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 // Styles
-const containerStyle = "w-full xl:max-w-[65%] md:mb-28 z-30"
+const desktopContainerStyle = "hidden md:block w-full xl:max-w-[65%] md:mb-28 z-30"
+const mobileContainerStyle = "md:hidden w-full xl:max-w-[65%] md:mb-28 z-30"
 const swiperStyle = 'h-[280px] xs:auto sm:h-[480px]'
-const swiperSlideSt = 'grid xs:grid-cols-1 xs:grid-rows-1 md:grid-cols-2 md:grid-rows-2 gap-4 cursor-pointer '
+const desktopSwiperSlideSt = 'grid md:grid-cols-2 md:grid-rows-2 gap-4 cursor-pointer'
+const mobileSwiperSlideSt = 'grid xs:grid-cols-1 xs:grid-rows-1 cursor-pointer'
 
 
 const WorkSlider = ({ handleDrawer }) => (
-  <motion.div
-    variants={fadeIn('down', 0.6)}
-    initial="hidden"
-    animate="show"
-    exit="hidden"
-    className={containerStyle}
-  >
-
-    <Swiper
-      spaceBetween={10}
-      pagination={{ clickable: true }}
-      modules={[Pagination]}
-      className={swiperStyle}
+  <>
+    {/* Desktop */}
+    <motion.div
+      variants={fadeIn('down', 0.6)}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className={desktopContainerStyle}
     >
+      <Swiper
+        spaceBetween={10}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className={swiperStyle}
+      >
         {projectList.slides.map((slide, index) => {
           return (
-              <SwiperSlide key={index}>
-                <div className={swiperSlideSt}>
-                  {slide.projects.map((project, index) => (
-                    <Card key={index} handleDrawer={handleDrawer} project={project} />
-                  ))}
-                </div>
-              </SwiperSlide>
+            <SwiperSlide key={index}>
+              <div className={desktopSwiperSlideSt}>
+                {slide.projects.map((project, index) => (
+                  <Card key={index} handleDrawer={handleDrawer} project={project} />
+                ))}
+              </div>
+            </SwiperSlide>
           )
         })}
-    </Swiper>
-  </motion.div>
+      </Swiper>
+    </motion.div>
+
+    {/* Mobile */}
+    <motion.div
+      variants={fadeIn('down', 0.6)}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className={mobileContainerStyle}
+    >
+      <Swiper
+        spaceBetween={10}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className={swiperStyle}
+      >
+        {projectList.slides.map((slide, index) => {
+          return (
+            <div key={index}>
+              {slide.projects.map( (project) => (
+                <SwiperSlide key={project.link}>
+                  <div className={mobileSwiperSlideSt}>
+                    <Card handleDrawer={handleDrawer} project={project} />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </div>
+          )
+        })}
+      </Swiper>
+    </motion.div>
+  </>
 )
 
 
