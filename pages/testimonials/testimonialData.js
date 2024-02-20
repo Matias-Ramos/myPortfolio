@@ -14,7 +14,7 @@ const testimonialData = [
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
     {
-        image: '/mChindi.png',
+        image: '/mChindi4.png',
         name: 'Matias Chindamo',
         role: 'MJ Construcciones',
         message:

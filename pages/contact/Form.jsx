@@ -29,7 +29,7 @@ const Form = () => (
         
         <button className={btnStyle}>
             <span className={btnTxtStyle}>
-                Let's talk
+                {`Let's talk`}
             </span>
             <BsArrowRight className={iconStyle} />
         </button>

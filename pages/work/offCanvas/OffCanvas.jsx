@@ -32,7 +32,7 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
         return () => {
             document.removeEventListener("keydown", handleEscKeyPress);
         };
-    }, [isOpen]);
+    }, [setIsOpen, isOpen]);
 
     const getAsideClasses = (isOpen) => {
         return classNames(

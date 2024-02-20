@@ -24,7 +24,7 @@ const Narrative = () => (
             animate="show"
             exit="hidden"
             className={paragraphStyle}>
-            Simplify your path to success.<br />Let's cut through the noise and achieve your goals, together.
+            Simplify your path to success.<br />{`Let's`} cut through the noise and achieve your goals, together.
         </motion.p>
     </>
 )

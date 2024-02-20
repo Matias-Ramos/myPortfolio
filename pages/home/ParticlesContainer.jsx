@@ -92,7 +92,7 @@ const ParticlesContainer = () => {
         },
       },
       detectRetina: true,
-    }))
+    }),[])
 
   return (
     init && (
