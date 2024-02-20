@@ -20,7 +20,7 @@ const Form = () => (
     >
         <div className={inputsStyle}>
             <input type="text" placeholder='name' className='input' />
-            <input type="text" placeholder='email' className='input' />
+            <input type="email" placeholder='email' className='input' />
         </div>
         
         <input type="text" placeholder='subject' className='input' />
