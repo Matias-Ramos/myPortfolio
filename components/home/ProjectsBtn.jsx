@@ -34,15 +34,17 @@ const desktopBtnStyle = 'hidden xl:flex z-50'
 
 const ProjectsBtn = () => (
   <>
+
     <div className={mobileBtnStyle}>
       <PlainBtn />
     </div>
+
     <motion.div
+      className={desktopBtnStyle}
       variants={fadeIn("down", 0.4)}
       initial="hidden"
       animate="show"
       exit="hidden"
-      className={desktopBtnStyle}
     >
       <PlainBtn />
     </motion.div>
