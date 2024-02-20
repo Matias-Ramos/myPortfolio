@@ -10,6 +10,36 @@ const btnStyle =  'btn rounded-full border border-white/50 max-w-[170px] px-8 tr
 const btnTxtStyle = 'group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'
 const iconStyle = '-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'
 
+
+const handleSubmit = async (evt) => {
+    evt.preventDefault();
+  
+    // Extract form data
+    const name = evt.target.elements.name.value;
+    const email = evt.target.elements.email.value;
+    const subject = evt.target.elements.subject.value;
+    const message = evt.target.elements.message.value;
+
+    // Send data to server using API route
+    try {
+      const response = await fetch('api/send.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+      alert('Your message has been sent successfully!');
+      evt.target.reset(); // Clear form fields
+      window.location.href = '/'; // Redirect to confirmation page
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your message.\nPlease try again later or contact me through linkedIn.');
+    }
+  };
 const Form = () => (
     <motion.form
         variants={fadeIn("up", 0.4)}
@@ -17,17 +47,18 @@ const Form = () => (
         animate="show"
         exit="hidden"
         className={formStyle}
+        onSubmit={handleSubmit}
     >
         <div className={inputsStyle}>
-            <input type="text" placeholder='name' className='input' />
-            <input type="email" placeholder='email' className='input' />
+            <input id="name" type="text" placeholder='name' className='input' required/>
+            <input id="email" type="email" placeholder='email' className='input' required/>
         </div>
         
-        <input type="text" placeholder='subject' className='input' />
+        <input id="subject" type="text" placeholder='subject' className='input' required/>
 
-        <textarea placeholder='message' className='textarea'></textarea>
+        <textarea id="message" placeholder='message' className='textarea' required></textarea>
         
-        <button className={btnStyle}>
+        <button className={btnStyle} type="submit">
             <span className={btnTxtStyle}>
                 {`Let's talk`}
             </span>
