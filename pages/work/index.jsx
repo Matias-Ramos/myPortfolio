@@ -1,9 +1,9 @@
-// hooks
+// Hooks
 import { useState } from "react";
-// components
-import Header from "./Header";
-import WorkSlider from "./WorkSlider";
-import OffCanvas from "./offCanvas/OffCanvas";
+// Components
+import Header from "../../components/work/Header";
+import WorkSlider from "../../components/work/WorkSlider";
+import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 // Styles

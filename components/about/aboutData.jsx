@@ -7,7 +7,7 @@ import {
     next,
     golang,
     sql
-} from '../../components/icons/icons'
+} from '../icons/icons'
 
 const aboutData = [
     {

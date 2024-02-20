@@ -10,7 +10,7 @@ import {
   cloud,
   typescript,
   next
-} from '../../components/icons/icons'
+} from '../icons/icons'
 
 const projectList = {
   slides: [

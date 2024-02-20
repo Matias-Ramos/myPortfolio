@@ -1,3 +1,4 @@
+// Styles
 const tooltipTriangleStyling = `
   border-solid
   border-l-white

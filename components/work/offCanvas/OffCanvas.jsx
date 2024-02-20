@@ -4,10 +4,10 @@
 import { useEffect } from "react";
 // Components
 import ProjectDetails from "./ProjectDetails";
-// Styles
-import classNames from "classnames";
 import Header from "./Header";
 import Footer from "./Footer";
+// Styles
+import classNames from "classnames";
 const containerStyle = "flex items-center justify-between text-white z-40";
 const bckgOuterCtSt = "z-20 fixed inset-0 transition-opacity";
 const bckgInnerCtSt = "absolute inset-0 bg-black opacity-50"

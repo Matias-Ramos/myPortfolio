@@ -1,8 +1,8 @@
 // Components
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
-import Narrative from "./narrative/Narrative";
-import SkillsExp from "./skillsExp/SkillsExp";
+import Narrative from "../../components/about/narrative/Narrative";
+import SkillsExp from "../../components/about/skillsExp/SkillsExp";
 // Animation
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'

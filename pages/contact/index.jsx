@@ -1,5 +1,5 @@
 // Components
-import Form from './Form';
+import Form from '../../components/contact/Form';
 // Animation
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'

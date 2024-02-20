@@ -1,5 +1,5 @@
 // Tooltip Icon
-import TooltipIcon from "../../../components/TooltipIcon";
+import TooltipIcon from "../../TooltipIcon";
 
 const ProjectDetails = (propertyName, data) => {
     if (!data) {
