@@ -4,7 +4,7 @@ import Image from 'next/image';
 const outerContainerSt = 'w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx:auto xl:mx-0 '
 const innerContainerSt = 'flex flex-col justify-center text-center'
 const avatarStyle = 'mb-2 mx-auto'
-const roleStyle = 'text-[12px] uppercase font-extralight tracking-widest'
+const urlStyle = 'text-[12px] uppercase font-extralight tracking-widest'
 
 const Reviewer = ({ person }) => (
     <div className={outerContainerSt}>
@@ -20,9 +20,9 @@ const Reviewer = ({ person }) => (
                 {person.name}
             </div>
 
-            {/* role */}
-            <div className={roleStyle}>
-                {person.role}
+            {/* url */}
+            <div className={urlStyle}>
+                {person.url}
             </div>
             
         </div>
