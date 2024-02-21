@@ -1,3 +1,5 @@
+'use client'
+
 // Animation
 import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
@@ -20,17 +22,16 @@ const handleSubmit = async (evt) => {
     const subject = evt.target.elements.subject.value;
     const message = evt.target.elements.message.value;
 
-    // Send data to server using API route
     try {
-      const response = await fetch('api/send.js', {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message }),
       });
-  
       if (!response.ok) {
         throw new Error('Form submission failed');
       }
+
       alert('Your message has been sent successfully!');
       evt.target.reset(); // Clear form fields
       window.location.href = '/'; // Redirect to confirmation page
@@ -50,13 +51,13 @@ const Form = () => (
         onSubmit={handleSubmit}
     >
         <div className={inputsStyle}>
-            <input id="name" type="text" placeholder='name' className='input' required/>
-            <input id="email" type="email" placeholder='email' className='input' required/>
+            <input id="name" type="text" placeholder='Name' className='input' required/>
+            <input id="email" type="email" placeholder='Email' className='input' required/>
         </div>
         
-        <input id="subject" type="text" placeholder='subject' className='input' required/>
+        <input id="subject" type="text" placeholder='Subject' className='input' required/>
 
-        <textarea id="message" placeholder='message' className='textarea' required></textarea>
+        <textarea id="message" placeholder='Message' className='textarea' required></textarea>
         
         <button className={btnStyle} type="submit">
             <span className={btnTxtStyle}>
