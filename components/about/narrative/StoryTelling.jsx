@@ -13,7 +13,7 @@ const StoryTelling = () => (
             exit="hidden"
             className="h2"
         >
-            Design that takes your business to the <span className="text-accent">next level</span>.
+            Design that takes business to the <span className="text-accent">next level</span>.
         </motion.h2>
 
         <motion.p

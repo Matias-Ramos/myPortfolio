@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 // Styles
 const h1style = "h1 z-10 lg:mb-0 xl:mb-6 text-danger"
-const paragraphStyle = "max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-12 text-lg"
+const paragraphStyle = "max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-12"
 
 const Narrative = () => (
     <>
@@ -24,7 +24,7 @@ const Narrative = () => (
             animate="show"
             exit="hidden"
             className={paragraphStyle}>
-            Simplify your path to success.<br />{`Let's`} cut through the noise and achieve your goals, together.
+                Bridging the gap between front-end and the bigger picture.<br />As a front-end developer with <b>holistic technical knowledge</b>, I collaborate effectively with teams, troubleshoot complex issues, and drive process optimization with a commitment to excellence.
         </motion.p>
     </>
 )
