@@ -38,7 +38,7 @@ const containerStyling = `
   h-[80px]
   xl:h-max
   py-8
-  bg-white/10
+  bg-whiteish/20
   backdrop-blur-sm
   text-3xl
   xl:text-xl
