@@ -12,7 +12,7 @@ const TooltipIcon = ({ language }) => (
     <TooltipProvider delayDuration={25}>
         <Tooltip>
             <TooltipTrigger>
-                <IconContext.Provider value={{ size: "2rem" }}>
+                <IconContext.Provider value={{ size: "2rem", className: "cursor-default" }}>
                     {language.icon}
                 </IconContext.Provider>
             </TooltipTrigger>
