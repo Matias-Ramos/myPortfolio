@@ -98,7 +98,7 @@ const ParticlesContainer = () => {
     init && (
       <Particles
         id="tsparticles"
-        className="w-full h-full absolute translate-z-0"
+        className="w-full h-full absolute translate-z-0 z-20"
         particlesLoaded={particlesLoaded}
         options={options}
       />

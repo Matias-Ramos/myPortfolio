@@ -2,7 +2,7 @@
 import Image from "next/image";
 // Styling
 const containerStyling =
-  "absolute left-0 top-0 mix-blend-color-dodge z-0 w-[200px] xl:w-[400px] opacity-50";
+  "absolute left-0 top-0 mix-blend-color-dodge z-20 w-[200px] xl:w-[400px] opacity-50";
 
 const TopLeftImg = () => (
   <div className={containerStyling}>
