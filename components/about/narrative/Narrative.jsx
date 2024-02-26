@@ -24,7 +24,7 @@ const Narrative = () => (
       <div className={countersInnerCtSt}>
         <Counter category="Years of experience" last={2} />
         <Counter category="Satisfied clients" last={4} />
-        <Counter category="Finished projects" last={6} />
+        <Counter category="Finished projects" last={7} />
       </div>
     </motion.div>
   </div>
