@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        <motion.div key={router.route} className='h-full'>
+        <motion.div key={router.route} className='h-full bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
           <Transition />
           <Component {...pageProps} />
         </motion.div>

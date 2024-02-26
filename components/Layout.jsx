@@ -12,7 +12,7 @@ const sora = Sora({
 })
 
 // Styles
-const containerStyle = `page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`
+const containerStyle = `page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative `
 
 
 const Layout = ({ children }) => (
