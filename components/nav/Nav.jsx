@@ -9,17 +9,15 @@ import { useRouter } from "next/router";
 import classNames from "classnames";
 const navStyling = `
   xs:max-sm:relative
+  xl:fixed
+  bottom-0
+  w-full
   flex
   flex-col
   items-center
   gap-y-4
-  fixed
-  h-max
-  bottom-0
   mt-auto
   z-50
-  top-0
-  w-full
   xl:right-[2%]
   xl:justify-center
   xl:w-16

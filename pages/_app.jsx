@@ -6,7 +6,7 @@ import Transition from "../components/Transition";
 import { useRouter } from 'next/router';
 import { AnimatePresence, motion } from "framer-motion";
 // Styles 
-const mainBckgStyle = "xl:h-full bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10"
+const mainBckgStyle = "xl:h-full color-fusion"
 
 function MyApp({ Component, pageProps }) {
 

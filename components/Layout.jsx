@@ -12,7 +12,7 @@ const sora = Sora({
 })
 
 // Styles
-const containerStyle = `page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto xl:overflow-y-hidden 
+const containerStyle = `page text-white bg-site bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto xl:overflow-y-hidden
 `
 
 
