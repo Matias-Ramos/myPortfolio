@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 // Styling
 import classNames from "classnames";
 const navStyling = `
+  xs:max-sm:relative
   flex
   flex-col
   items-center
@@ -33,11 +34,11 @@ const containerStyling = `
   xl:justify-center
   gap-y-10
   px-4
+  py-8
   md:px-40
   xl:px-0
   h-[80px]
   xl:h-max
-  py-8
   bg-whiteish/20
   backdrop-blur-sm
   text-3xl

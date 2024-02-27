@@ -5,9 +5,12 @@ import { fadeIn } from '../../../variants'
 import Counter from './Counter';
 import StoryTelling from './StoryTelling';
 // Styles
-const containerStyle = "flex flex-1 flex-col justify-start h-full relative"
+const containerStyle = "flex flex-col justify-start relative"
 const countersOuterCtSt = "hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-const countersInnerCtSt ="flex flex-1 xl:gap-x-6 "
+const countersInnerCtSt =`flex xl:gap-x-6 
+relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:left-0
+xl:after:w-[0px]
+`
 
 const Narrative = () => (
   <div className={containerStyle}>

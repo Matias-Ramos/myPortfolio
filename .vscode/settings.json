@@ -22,5 +22,13 @@
         "terminal.background": "#0F0F0F"
     },
     "reactSnippets.settings.importReactOnTop": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript",
+        "css": "css"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    }
 }

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 // Styles
 const h1style = "h1 z-10 lg:mb-0 xl:mb-6 text-danger"
-const paragraphStyle = "max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-12 text-lg"
+const paragraphStyle = "w-10/12 xl:w-full my-3 xl:my-0 xl:max-w-xl mx-auto xl:mx-0 mb-10 lg:mb-5 xl:mb-12 text-lg"
 
 const Narrative = () => (
     <>
