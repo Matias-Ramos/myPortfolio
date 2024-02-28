@@ -4,7 +4,7 @@ import TestimonialSlider from "../../components/testimonials/TestimonialSlider";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 // Style
-const outerContainerSt = "h-full bg-primary/30  text-center"
+const outerContainerSt = "h-full bg-primary/30  text-center z-30"
 const InnerContainerSt = "md:container mx-auto h-full flex flex-col justify-center xl:justify-start min-w-10/12 xs:mt-52 sm:mt-16 xl:mt-0"
 const h2style = "h2 mb-8 xl:mb-0"
 const sliderCtStyle = "xs:mb-20 md:mb-28 xl:mb-0"

@@ -6,7 +6,7 @@ import Transition from "../components/Transition";
 import { useRouter } from 'next/router';
 import { AnimatePresence, motion } from "framer-motion";
 // Styles 
-const mainBckgStyle = "xl:h-full color-fusion"
+const mainBckgStyle = "xl:h-full color-fusion "
 
 function MyApp({ Component, pageProps }) {
 
