@@ -27,7 +27,13 @@
     @apply bg-secondary overflow-hidden leading-relaxed;
   }
   .page {
-    @apply w-full h-screen overflow-y-auto overflow-x-hidden xl:overflow-hidden;
+    @apply w-full h-screen overflow-y-auto overflow-x-hidden xl:overflow-hidden flex flex-col;
+  }
+  main {
+    @apply grow;
+  }
+  nav, header{
+    @apply grow-0;
   }
   .color-fusion {
     @apply bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10;
