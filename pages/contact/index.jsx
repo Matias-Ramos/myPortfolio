@@ -10,7 +10,7 @@ const innerContainerSt = 'flex flex-col w-full max-w-[700px] xs:mt-60 lg:mt-44'
 const h2Style = 'h2 text-center mb-12'
 
 const Contact = () => (
-  <div className={outerContainerSt}>
+  <section className={outerContainerSt}>
     <div className={middleContainerSt}>
       <div className={innerContainerSt}>
 
@@ -28,7 +28,7 @@ const Contact = () => (
 
       </div>
     </div>
-  </div>
+  </section>
 )
 
 export default Contact;

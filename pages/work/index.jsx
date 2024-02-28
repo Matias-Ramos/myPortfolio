@@ -22,7 +22,7 @@ const Work = () => {
   };
 
   return (
-    <div className={outerCtStyle}>
+    <section className={outerCtStyle}>
       <OffCanvas
         isOpen={isOpen}
         setIsOpen={setIsOpen}
@@ -38,7 +38,7 @@ const Work = () => {
         </div>
       </div>
       <Bulb />
-    </div>
+    </section>
   )
 };
 

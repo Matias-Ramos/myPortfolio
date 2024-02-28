@@ -7,10 +7,10 @@ const containerStyle = "xl:h-full text-center xl:text-left flex flex-col justify
 
 const Home = () => (
   <>
-      <div className={containerStyle}>
+      <section className={containerStyle}>
         <Narrative />
         <ProjectsBtn />
-      </div>
+      </section>
 
     <Background />
 
