@@ -8,7 +8,7 @@ import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 // Styles
 const outerCtStyle = "h-full bg-primary/30 flex items-center xs:max-sm:pb-16"
-const middleCtStyle = "w-full md:container mx-auto"
+const middleCtStyle = "w-full md:container mx-auto xl:h-full"
 const innerCtStyle = "flex flex-col xl:flex-row gap-x-8"
 
 const Work = () => {
