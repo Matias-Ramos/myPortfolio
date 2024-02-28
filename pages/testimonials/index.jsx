@@ -4,14 +4,14 @@ import TestimonialSlider from "../../components/testimonials/TestimonialSlider";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 // Style
-const outerContainerSt = "h-full bg-primary/30 text-center"
-const InnerContainerSt = "md:container mx-auto h-full flex flex-col justify-center xl:justify-start min-w-10/12  relative z-30"
+const sectionStyle = "h-full bg-primary/30 text-center"
+const containerSt = "md:container mx-auto h-full flex flex-col justify-center xl:justify-start min-w-10/12  relative z-30"
 const h2style = "h2 mb-8 xl:mb-0"
 const sliderCtStyle = "xs:mb-20 md:mb-28 xl:mb-0"
 
 const Testimonials = () => (
-  <section className={outerContainerSt}>
-    <div className={InnerContainerSt}>
+  <section className={sectionStyle}>
+    <div className={containerSt}>
       
       {/* title */}
       <motion.h2

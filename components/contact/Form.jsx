@@ -6,7 +6,7 @@ import { fadeIn } from "../../variants"
 // Icons
 import { BsArrowRight } from 'react-icons/bs'
 // Styles
-const formStyle = 'flex-1 flex flex-col gap-6 w-full mx-auto xs:mb-28'
+const formStyle = 'flex-1 flex flex-col gap-6 w-full mx-auto xs:mb-8 xl:mb-24 xl:pb-3'
 const inputsStyle = 'flex gap-x-6 w-full'
 const btnStyle =  'btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'
 const btnTxtStyle = 'group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'

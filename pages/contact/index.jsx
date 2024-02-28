@@ -4,14 +4,14 @@ import Form from '../../components/contact/Form';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'
 // Styles
-const outerContainerSt = 'h-full bg-primary/30'
-const middleContainerSt = 'container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'
-const innerContainerSt = 'flex flex-col w-full max-w-[700px] xs:mt-60 lg:mt-44'
+const sectionStyle = 'h-full bg-primary/30'
+const outerContainerSt = 'container mx-auto text-center xl:text-left flex items-center justify-center h-full'
+const innerContainerSt = 'flex flex-col w-full max-w-[700px]'
 const h2Style = 'h2 text-center mb-12'
 
 const Contact = () => (
-  <section className={outerContainerSt}>
-    <div className={middleContainerSt}>
+  <section className={sectionStyle}>
+    <div className={outerContainerSt}>
       <div className={innerContainerSt}>
 
         <motion.h2

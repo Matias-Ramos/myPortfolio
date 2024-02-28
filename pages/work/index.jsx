@@ -7,8 +7,8 @@ import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 // Styles
-const outerCtStyle = "h-full bg-primary/30 flex items-center xs:max-sm:pb-16"
-const middleCtStyle = "w-full md:container mx-auto xl:h-full"
+const sectionStyle = "h-full bg-primary/30 flex items-center xs:max-sm:pb-16"
+const outerCtStyle = "w-full md:container mx-auto xl:h-full"
 const innerCtStyle = "flex flex-col xl:flex-row gap-x-8"
 
 const Work = () => {
@@ -22,14 +22,14 @@ const Work = () => {
   };
 
   return (
-    <section className={outerCtStyle}>
+    <section className={sectionStyle}>
       <OffCanvas
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         projectDetail={projectDetail}
       />
       <Circles />
-      <div className={middleCtStyle}>
+      <div className={outerCtStyle}>
         <div className={innerCtStyle}>
 
           <Header />
