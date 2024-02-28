@@ -13,9 +13,9 @@ import { Pagination } from 'swiper';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 // Styles
-const desktopContainerStyle = "hidden md:block w-full xl:max-w-[65%] md:mb-28 z-30"
+const desktopContainerStyle = "hidden md:block w-full xl:max-w-[65%] md:mb-8 z-30"
 const mobileContainerStyle = "md:hidden w-full xl:max-w-[65%] md:mb-28 z-30"
-const swiperStyle = 'h-[280px] xs:auto sm:h-[480px]'
+const swiperStyle = 'h-[280px] xs:auto xs:h-[360px] md:h-[480px]'
 const desktopSwiperSlideSt = 'grid md:grid-cols-2 md:grid-rows-2 gap-4 cursor-pointer'
 const mobileSwiperSlideSt = 'grid xs:grid-cols-1 xs:grid-rows-1 cursor-pointer'
 

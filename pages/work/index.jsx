@@ -7,9 +7,9 @@ import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 // Styles
-const outerCtStyle = "h-full bg-primary/30 py-36 flex items-center"
+const outerCtStyle = "h-full bg-primary/30 flex items-center xs:max-sm:pb-16"
 const middleCtStyle = "w-full md:container mx-auto"
-const innerCtStyle = "flex flex-col xl:flex-row gap-x-8 sm:mt-64"
+const innerCtStyle = "flex flex-col xl:flex-row gap-x-8"
 
 const Work = () => {
 

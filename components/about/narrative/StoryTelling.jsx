@@ -23,7 +23,7 @@ const StoryTelling = () => (
             exit="hidden"
             className={paragraphStyle}
         >
-            In 2022, I launched my freelance development career, partnering with passionate entrepreneurs across <span className="font-semibold">diverse industries</span>, including but not limited to a Colombian fitness studios, a real estate agency, and a car dealership from Buenos Aires.
+            In 2022, I launched my freelance development career, partnering with passionate entrepreneurs across <span className="font-semibold">diverse industries</span>, including (but not limited to) a Colombian fitness studios, a real estate agency, and a car dealership from Buenos Aires.
         </motion.p>
     </>
 )
