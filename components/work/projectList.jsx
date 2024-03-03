@@ -15,20 +15,27 @@ import {
 const projectList = {
   slides: [
     {
-      // each projects array has capacity for 4 objects.
+      // each projects array has capacity for 4 objects
       projects: [
         {
-          id: 6,
+          id: 7,
           title: "www.matiasramos.dev",
           link: "https://matiasramos.dev",
           img: '/work/mrPortfolio.png',
           frontend: [next, javascript],
         },
         {
+          id: 6,
+          title: "www.santoscloser.com",
+          link: "https://santoscloser.com",
+          img: '/work/fsantosLanding.png',
+          frontend: [react, typescript],
+        },
+        {
           id: 5,
-          title: "www.fedesantos.com",
-          link: "https://fedesantos.com",
-          img: '/thumb1.jpg',
+          title: "www.santoscloser-cdv.com",
+          link: "https://santoscloser-cdv.com",
+          img: '/work/fsantosWebsite.png',
           frontend: [react, typescript],
         },
         {
@@ -38,6 +45,10 @@ const projectList = {
           img: '/work/elevateher.png',
           frontend: [react, javascript],
         },
+      ],
+    },
+    {
+      projects: [
         {
           id: 3,
           title: "www.delsurprops.com.ar",
@@ -48,10 +59,6 @@ const projectList = {
           database: [postgres],
           hosting: [linux, cloud],
         },
-      ],
-    },
-    {
-      projects: [
         {
           id: 2,
           title: "www.orautomotores.com.ar",
