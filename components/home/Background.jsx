@@ -17,7 +17,7 @@ const Background = () => (
         <ParticlesContainer />
 
         <motion.div
-            variants={fadeIn("up", 0.5)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
