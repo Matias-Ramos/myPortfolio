@@ -12,15 +12,16 @@ const sora = Sora({
 })
 
 // Styles
-const containerStyle = `page text-white bg-site bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto md:overflow-y-hidden
-`
+const containerStyle = `page text-white bg-site bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto md:overflow-y-hidden`
 
 const Layout = ({ children }) => (
   <div className={containerStyle}>
-    <TopLeftImg />
-    <Header />
-    {children}
-    <Nav />
+    <div className="color-fusion min-h-screen flex flex-col">
+      <TopLeftImg />
+      <Header />
+      {children}
+      <Nav />
+    </div>
   </div>
 )
 export default Layout;

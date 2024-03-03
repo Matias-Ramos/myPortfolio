@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Socials from './Socials';
 // Style
 const headerStyle = `
-relative z-40 w-full flex items-center px-1 xs:px-0
+relative w-full flex items-center px-1 xs:px-0
 max-lg:color-fusion
-xl:absolute xl:px-0 xl:h-[90px]
+xl:px-0 xl:h-[90px] xl:absolute z-40
 `;
 const containerStyle = "container mx-auto";
 const innerCtStyle = 'flex xs:flex-col sm:flex-row justify-between items-center gap-y-6 xs:gap-y-2 py-8';

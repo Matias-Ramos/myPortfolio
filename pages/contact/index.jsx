@@ -4,7 +4,7 @@ import Form from '../../components/contact/Form';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'
 // Styles
-const sectionStyle = 'h-full bg-primary/30'
+const sectionStyle = 'h-full'
 const outerContainerSt = 'container mx-auto text-center xl:text-left flex items-center justify-center h-full'
 const innerContainerSt = 'flex flex-col w-full max-w-[700px]'
 const h2Style = 'h2 text-center mb-12'
