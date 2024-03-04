@@ -16,6 +16,8 @@ const Card = ({ handleDrawer, project }) => (
         className={outerContainerSt}
         role="button"
         onClick={() => handleDrawer(project)}
+        onKeyDown={(e) => e.key=== 'Enter' && handleDrawer(project)}
+        tabIndex={0}
     >
         <div className={innerContainerSt}>
             

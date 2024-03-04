@@ -16,13 +16,13 @@ const Buttons = ({index, setIndex, aboutData}) => {
     return (
         <div className={containerStyle}>
             {aboutData.map((item, itemIndex) => (
-                <div
+                <button
                     key={itemIndex}
                     className={ getBtnClasses(itemIndex) }
                     onClick={() => setIndex(itemIndex)}
                 >
                     {item.title}
-                </div>
+                </button>
             ))}
         </div>
     )

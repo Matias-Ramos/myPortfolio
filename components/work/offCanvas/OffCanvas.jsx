@@ -9,7 +9,7 @@ import Footer from "./Footer";
 // Styles
 import classNames from "classnames";
 const containerStyle = "flex items-center justify-between text-white z-40";
-const bckgOuterCtSt = "z-20 fixed inset-0 transition-opacity";
+const bckgOuterCtSt = "z-60 fixed inset-0 transition-opacity";
 const bckgInnerCtSt = "absolute inset-0 bg-black opacity-50"
 
 const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
