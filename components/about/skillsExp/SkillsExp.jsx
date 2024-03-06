@@ -8,7 +8,7 @@ import { fadeIn } from '../../../variants'
 import Buttons from './Buttons';
 import Details from './Details';
 // Styles
-const containerStyle = "h-auto flex flex-col w-full xl:max-w-[48%] lg:align-top"
+const containerStyle = "h-auto flex flex-col w-full lg:align-top"
 
 const SkillsExp = () => {
 

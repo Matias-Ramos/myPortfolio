@@ -23,14 +23,14 @@
   justify-content: center;
 }
 @layer base {
-  html, body, #__next {
+  html, body, #__next, .page {
     @apply min-h-screen;
   }
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-secondary overflow-x-hidden xl:overflow-hidden leading-relaxed;
   }
   .page {
-    @apply overflow-y-auto overflow-x-hidden xl:overflow-hidden min-h-screen;
+    @apply overflow-y-auto overflow-x-hidden xl:overflow-hidden;
   }
   main {
     @apply grow;

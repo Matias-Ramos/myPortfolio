@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 // Styles 
 const mainBckgStyle = `
 flex color-fusion bg-primary/30 
-xl:h-full xl:items-center xl:justify-center xl:pt-[90px]`
+xl:h-full items-center justify-center xl:pt-[90px]`
 
 function MyApp({ Component, pageProps }) {
 
