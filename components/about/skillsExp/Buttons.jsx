@@ -1,6 +1,6 @@
 // Styles
 import classNames from 'classnames';
-const containerStyle = "flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 relative z-20 "
+const containerStyle = "flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 relative "
 
 const Buttons = ({index, setIndex, aboutData}) => {
 

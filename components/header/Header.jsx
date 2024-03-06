@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const headerStyle = `
 relative w-full flex items-center px-1 xs:px-0
 max-xl:color-fusion max-xl:bg-primary/30
-xl:px-0 xl:h-[90px] xl:absolute z-50
+xl:px-0 xl:h-[90px] xl:absolute z-30
 `;
 const containerStyle = "container mx-auto";
 const innerCtStyle = 'flex xs:flex-col sm:flex-row justify-between items-center gap-y-6 xs:gap-y-2 py-8';

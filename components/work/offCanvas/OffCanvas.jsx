@@ -9,7 +9,7 @@ import Footer from "./Footer";
 // Styles
 import classNames from "classnames";
 const containerStyle = "flex items-center justify-between text-white z-40";
-const bckgOuterCtSt = "z-60 fixed inset-0 transition-opacity";
+const bckgOuterCtSt = "fixed inset-0 transition-opacity";
 const bckgInnerCtSt = "absolute inset-0 bg-black opacity-50"
 
 const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
@@ -36,7 +36,7 @@ const OffCanvas = ({ isOpen, setIsOpen, projectDetail: project }) => {
 
     const getAsideClasses = (isOpen) => {
         return classNames(
-            "transform top-0 left-0 w-64 bg-tertiary fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ",
+            "transform top-0 left-0 w-64 bg-tertiary fixed h-full overflow-auto ease-in-out transition-all duration-300",
             {"translate-x-0": isOpen},
             {"-translate-x-full": !isOpen}
         );

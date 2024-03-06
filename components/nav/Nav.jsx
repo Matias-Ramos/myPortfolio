@@ -11,11 +11,11 @@ import { motion } from 'framer-motion';
 // Styling
 import classNames from "classnames";
 const navStyling = `
-  bottom-0 w-full flex flex-col items-center gap-y-4 mt-auto z-50
+  bottom-0 w-full flex flex-col items-center gap-y-4 mt-auto z-40
   xs:max-sm:relative xl:fixed xl:right-[2%] xl:justify-center xl:w-16 xl:max-w-md  xl:h-screen
   `;
 const containerStyling = `
-  h-[80px] w-full px-4 py-8 md:px-40 z-30 text-3xl flex items-center justify-between gap-y-10 bg-whiteish/20 backdrop-blur-sm
+  h-[80px] w-full px-4 py-8 md:px-40 text-3xl flex items-center justify-between gap-y-10 bg-whiteish/20 backdrop-blur-sm
   xl:px-0 xl:h-max xl:justify-center xl:text-xl xl:rounded-full xl:flex-col
   `;
 const linkBaseStyles = `

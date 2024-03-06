@@ -30,7 +30,7 @@ const PlainBtn = () => (
 
 // Styles
 const mobileBtnStyle = "flex justify-center relative xl:hidden"
-const desktopBtnStyle = 'hidden xl:flex z-50'
+const desktopBtnStyle = 'hidden xl:flex z-20'
 
 const ProjectsBtn = () => (
   <>
