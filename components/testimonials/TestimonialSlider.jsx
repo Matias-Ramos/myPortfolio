@@ -9,8 +9,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Navigation, Pagination } from 'swiper';
 // Styles
-const swiperStyle = 'xs:h-auto sm:h-[400px] sm:mb-0'
-const swiperSlideStyle = 'flex flex-col items-center md:flex-row gap-x-8 h-full px-16 '
+const swiperStyle = 'h-auto sm:h-[350px] sm:mb-0'
+const swiperSlideStyle = 'flex flex-col items-center md:flex-row gap-x-8 h-full xl:h-auto px-16 '
 
 const TestimonialSlider = () => (
   <Swiper
