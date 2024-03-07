@@ -6,6 +6,7 @@ import WorkSlider from "../../components/work/WorkSlider";
 import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
+
 // Styles
 const sectionStyle = "h-full flex items-center xs:max-sm:pb-16"
 const outerCtStyle = "w-full md:container mx-auto xl:h-full"
@@ -33,8 +34,10 @@ const Work = () => {
         <div className={innerCtStyle}>
 
           <Header />
-          <WorkSlider handleDrawer={handleDrawer}/>
 
+
+          <WorkSlider handleDrawer={handleDrawer}/>
+        
         </div>
       </div>
       <Bulb />
