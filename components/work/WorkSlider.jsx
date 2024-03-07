@@ -8,6 +8,9 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Navigation, Pagination  } from 'swiper';
+// Animation
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 // Styles
 const desktopContainerStyle = "hidden md:block w-full xl:max-w-[75%] md:mb-8 z-30"
 const mobileContainerStyle = "md:hidden w-screen xl:max-w-[65%] sm:mb-12 md:mb-28 z-30"
@@ -21,7 +24,13 @@ const WorkSlider = ({ handleDrawer }) =>
   return(
     <>
       {/* Desktop */}
-      <div className={desktopContainerStyle}>
+      <motion.div
+        variants={""}
+        initial=""
+        animate=""
+        exit=""
+        className={desktopContainerStyle}
+      >
         <Swiper
           navigation={true}
           spaceBetween={10}
@@ -41,10 +50,16 @@ const WorkSlider = ({ handleDrawer }) =>
             )
           })}
         </Swiper>
-      </div>
+      </motion.div>
   
       {/* Mobile */}
-      <div className={mobileContainerStyle}>
+      <motion.div
+        variants={""}
+        initial=""
+        animate=""
+        exit=""
+        className={mobileContainerStyle}
+      >
         <Swiper
           spaceBetween={10}
           pagination={{ clickable: true }}
@@ -53,7 +68,7 @@ const WorkSlider = ({ handleDrawer }) =>
         >
           {projectList.slides.map((slide, index) => {
             return (
-              <div key={index}>
+              <motion.div key={index}>
                 {slide.projects.map( (project) => (
                   <SwiperSlide key={project.link}>
                     <div className={mobileSwiperSlideSt}>
@@ -61,11 +76,11 @@ const WorkSlider = ({ handleDrawer }) =>
                     </div>
                   </SwiperSlide>
                 ))}
-              </div>
+              </motion.div>
             )
           })}
         </Swiper>
-      </div>
+      </motion.div>
     </>
   )
 }
