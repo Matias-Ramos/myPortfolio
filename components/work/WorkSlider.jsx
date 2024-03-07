@@ -7,7 +7,7 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import { Navigation, Pagination  } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 // Animation
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
@@ -19,21 +19,11 @@ const desktopSwiperSlideSt = 'grid md:grid-cols-2 md:grid-rows-2 gap-4 cursor-po
 const mobileSwiperSlideSt = 'grid xs:grid-cols-1 xs:grid-rows-1 cursor-pointer md:px-8'
 
 
-const WorkSlider = ({ handleDrawer }) => 
-{
-  return(
+const WorkSlider = ({ handleDrawer }) => {
+  return (
     <>
       {/* Desktop */}
-      <motion.div
-        variants={fadeIn('down', 0.2)}
-        initial="hidden"
-        animate="show"
-        exit={{
-          opacity: 0,
-          transition: { duration: 0.3 },
-        }}
-        className={desktopContainerStyle}
-      >
+      <div className={desktopContainerStyle}>
         <Swiper
           navigation={true}
           spaceBetween={10}
@@ -44,17 +34,43 @@ const WorkSlider = ({ handleDrawer }) =>
           {projectList.slides.map((slide, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className={desktopSwiperSlideSt}>
+
+
+                {({ isActive }) => (
+                  isActive ? (
+                    <motion.div
+                      variants={fadeIn('down', 0.2)}
+                      initial="hidden"
+                      animate="show"
+                      exit="hidden"
+                      className={desktopSwiperSlideSt}>
+                      {slide.projects.map((project, index) => (
+                        <Card key={index} handleDrawer={handleDrawer} project={project} />
+                      ))}
+                    </motion.div>
+                  ) : (
+                    <div className={desktopSwiperSlideSt}>
+                      {slide.projects.map((project, index) => (
+                        <Card key={index} handleDrawer={handleDrawer} project={project} />
+                      ))}
+                    </div>
+                  )
+                )}
+
+                {/* <div className={desktopSwiperSlideSt}>
                   {slide.projects.map((project, index) => (
                     <Card key={index} handleDrawer={handleDrawer} project={project} />
                   ))}
-                </div>
+                </div> */}
+
+
+
               </SwiperSlide>
             )
           })}
         </Swiper>
-      </motion.div>
-  
+      </div>
+
       {/* Mobile */}
       <motion.div
         variants={fadeIn('down', 0.2)}
@@ -71,7 +87,7 @@ const WorkSlider = ({ handleDrawer }) =>
           {projectList.slides.map((slide, index) => {
             return (
               <div key={index}>
-                {slide.projects.map( (project) => (
+                {slide.projects.map((project) => (
                   <SwiperSlide key={project.link}>
                     <div className={mobileSwiperSlideSt}>
                       <Card handleDrawer={handleDrawer} project={project} />
