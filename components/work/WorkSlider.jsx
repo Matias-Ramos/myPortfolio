@@ -50,7 +50,10 @@ const WorkSlider = ({ handleDrawer }) => {
                     </motion.div>
                   ) : (
                     <motion.div
-                      exit={{ opacity: 0 }}
+                      variants={fadeIn('down', 0.2)}
+                      initial="hidden"
+                      animate="show"
+                      exit={{ display: "none" }}
                       className={desktopSwiperSlideSt}
                     >
                       {slide.projects.map((project, index) => (
