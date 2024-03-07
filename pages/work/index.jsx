@@ -33,20 +33,14 @@ const Work = () => {
       />
       <Circles />
 
-      <motion.div
-        variants={fadeIn('up', 0.6)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className={outerCtStyle}
-      >
+      <div className={outerCtStyle}>
         <div className={innerCtStyle}>
 
           <Header />
           <WorkSlider handleDrawer={handleDrawer}/>
         
         </div>
-      </motion.div>
+      </div>
       <Bulb />
     </section>
   )

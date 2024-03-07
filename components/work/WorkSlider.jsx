@@ -25,10 +25,13 @@ const WorkSlider = ({ handleDrawer }) =>
     <>
       {/* Desktop */}
       <motion.div
-        variants={""}
-        initial=""
-        animate=""
-        exit=""
+        variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        animate="show"
+        exit={{
+          opacity: 0,
+          transition: { duration: 0.3 },
+        }}
         className={desktopContainerStyle}
       >
         <Swiper
@@ -54,10 +57,9 @@ const WorkSlider = ({ handleDrawer }) =>
   
       {/* Mobile */}
       <motion.div
-        variants={""}
-        initial=""
-        animate=""
-        exit=""
+        variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        animate="show"
         className={mobileContainerStyle}
       >
         <Swiper
@@ -68,7 +70,7 @@ const WorkSlider = ({ handleDrawer }) =>
         >
           {projectList.slides.map((slide, index) => {
             return (
-              <motion.div key={index}>
+              <div key={index}>
                 {slide.projects.map( (project) => (
                   <SwiperSlide key={project.link}>
                     <div className={mobileSwiperSlideSt}>
@@ -76,7 +78,7 @@ const WorkSlider = ({ handleDrawer }) =>
                     </div>
                   </SwiperSlide>
                 ))}
-              </motion.div>
+              </div>
             )
           })}
         </Swiper>
