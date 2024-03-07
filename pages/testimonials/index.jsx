@@ -29,7 +29,6 @@ const Testimonials = () => (
         variants={fadeIn('up', 0.4)}
         initial="hidden"
         animate="show"
-        exit="hidden"
         className={sliderCtStyle}
       >
         <TestimonialSlider />

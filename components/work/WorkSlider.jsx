@@ -1,5 +1,3 @@
-'use client'
-
 // data
 import projectList from './projectList';
 // Components
