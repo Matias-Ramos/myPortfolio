@@ -62,15 +62,6 @@ const WorkSlider = ({ handleDrawer }) => {
                     </motion.div>
                   )
                 )}
-
-                {/* <div className={desktopSwiperSlideSt}>
-                  {slide.projects.map((project, index) => (
-                    <Card key={index} handleDrawer={handleDrawer} project={project} />
-                  ))}
-                </div> */}
-
-
-
               </SwiperSlide>
             )
           })}
