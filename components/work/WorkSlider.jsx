@@ -57,6 +57,7 @@ const WorkSlider = ({ handleDrawer }) =>
         variants={fadeIn('down', 0.6)}
         initial="hidden"
         animate="show"
+        exit="hidden"
         className={mobileContainerStyle}
       >
         <Swiper
@@ -67,7 +68,7 @@ const WorkSlider = ({ handleDrawer }) =>
         >
           {projectList.slides.map((slide, index) => {
             return (
-              <div key={index}>
+              <motion.div key={index}>
                 {slide.projects.map( (project) => (
                   <SwiperSlide key={project.link}>
                     <div className={mobileSwiperSlideSt}>
@@ -75,7 +76,7 @@ const WorkSlider = ({ handleDrawer }) =>
                     </div>
                   </SwiperSlide>
                 ))}
-              </div>
+              </motion.div>
             )
           })}
         </Swiper>

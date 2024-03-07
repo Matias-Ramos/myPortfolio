@@ -34,8 +34,6 @@ const Work = () => {
         <div className={innerCtStyle}>
 
           <Header />
-
-
           <WorkSlider handleDrawer={handleDrawer}/>
         
         </div>
