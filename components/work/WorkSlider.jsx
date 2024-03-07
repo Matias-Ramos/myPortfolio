@@ -49,11 +49,14 @@ const WorkSlider = ({ handleDrawer }) => {
                       ))}
                     </motion.div>
                   ) : (
-                    <div className={desktopSwiperSlideSt}>
+                    <motion.div
+                      exit={{ opacity: 0 }}
+                      className={desktopSwiperSlideSt}
+                    >
                       {slide.projects.map((project, index) => (
                         <Card key={index} handleDrawer={handleDrawer} project={project} />
                       ))}
-                    </div>
+                    </motion.div>
                   )
                 )}
 
