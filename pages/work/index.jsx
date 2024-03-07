@@ -6,7 +6,9 @@ import WorkSlider from "../../components/work/WorkSlider";
 import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
-
+// Animation
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 // Styles
 const sectionStyle = "h-full flex items-center xs:max-sm:pb-16"
 const outerCtStyle = "w-full md:container mx-auto xl:h-full"
@@ -30,14 +32,21 @@ const Work = () => {
         projectDetail={projectDetail}
       />
       <Circles />
-      <div className={outerCtStyle}>
+
+      <motion.div
+        variants={fadeIn('up', 0.6)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className={outerCtStyle}
+      >
         <div className={innerCtStyle}>
 
           <Header />
           <WorkSlider handleDrawer={handleDrawer}/>
         
         </div>
-      </div>
+      </motion.div>
       <Bulb />
     </section>
   )
