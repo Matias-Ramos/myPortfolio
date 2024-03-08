@@ -11,6 +11,15 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
 
+// SEO
+export const metadata = {
+  title: 'Matias R.',
+  description: 'Freelance web developer',
+  icons: {
+    icon: ["/favicon.svg"]
+  },
+}
+
 // Styles
 const containerStyle = `page text-white bg-site bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto md:overflow-y-hidden`
 

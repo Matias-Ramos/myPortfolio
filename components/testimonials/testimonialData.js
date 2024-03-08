@@ -11,7 +11,7 @@ const testimonialData = [
         name: 'Federico Santos',
         url: 'santoscloser.com',
         message:
-            'Necesitaba una página web fiel a la marca y Matías la creó, superando mis expectativas. Sin yo tener experiencia en el ámbito, el me guió con claridad y profesionalidad. Estoy muy satisfecho con el resultado y el servicio.',
+            'Necesitaba una página web fiel a la marca y Matías la creó, superando mis expectativas. Sin yo tener experiencia en el ámbito, el me guió con claridad y profesionalismo. Estoy muy satisfecho con el resultado y el servicio.',
     },
     {
         image: '/mChindamo.png',
