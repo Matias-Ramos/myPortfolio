@@ -2,7 +2,8 @@
 import { useState } from "react";
 // Components
 import Header from "../../components/work/Header";
-import WorkSlider from "../../components/work/WorkSlider";
+import WorkSliderDesktop from "../../components/work/WorkSliderDesktop";
+import WorkSliderMobile from "../../components/work/WorkSliderMobile";
 import OffCanvas from "../../components/work/offCanvas/OffCanvas";
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
@@ -33,14 +34,21 @@ const Work = () => {
       />
       <Circles />
 
-      <div className={outerCtStyle}>
+      <motion.div 
+        variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className={outerCtStyle}
+      >
         <div className={innerCtStyle}>
 
           <Header />
-          <WorkSlider handleDrawer={handleDrawer}/>
+          <WorkSliderDesktop handleDrawer={handleDrawer}/>
+          <WorkSliderMobile handleDrawer={handleDrawer}/>
         
         </div>
-      </div>
+      </motion.div>
       <Bulb />
     </section>
   )
