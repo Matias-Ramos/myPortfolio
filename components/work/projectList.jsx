@@ -21,7 +21,7 @@ const projectList = {
           id: 7,
           title: "www.matiasramos.dev",
           link: "https://www.matiasramos.dev",
-          img: '/work/mrPortfolio.png',
+          img: '/work/matiasramosPortfolio.png',
           frontend: [next, javascript],
         },
         {
