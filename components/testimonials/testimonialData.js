@@ -18,7 +18,7 @@ const testimonialData = [
         name: 'Matias Chindamo',
         url: 'mjconstrucciones.ar',
         message:
-            'El programador logró materializar mis ideas y no solamente comprendió el requerimiento a nivel funcional, sino que también lo plasmó con un diseño magnífico.',
+            'Matias logró materializar mis ideas y no solamente comprendió el requerimiento a nivel funcional, sino que también lo plasmó con un diseño magnífico.',
     },
 ];
 export default testimonialData;
