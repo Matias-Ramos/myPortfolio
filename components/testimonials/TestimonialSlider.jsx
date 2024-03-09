@@ -24,7 +24,6 @@ const TestimonialSlider = () => (
   >
     {testimonialData.map((person, index) => (
       <SwiperSlide key={index}>
-
         {({ isActive }) => (
           isActive ? (
             <motion.div

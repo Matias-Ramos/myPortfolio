@@ -4,9 +4,7 @@ import projectList from './projectList';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import 'swiper/css'
-import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 import Card from './Card';
 // Animation
 import { motion } from 'framer-motion';

@@ -7,7 +7,7 @@ import { fadeIn } from '../../variants';
 const sectionStyle = "h-full text-center"
 const containerSt = "md:container mx-auto h-full flex flex-col justify-center xl:justify-start min-w-10/12  relative z-30"
 const h2style = "h2 mb-8 xl:mb-0"
-const sliderCtStyle = "xs:mb-20 md:mb-28 xl:mb-0"
+const sliderCtStyle = "max-lg:max-w-[100vw] xs:mb-20 md:mb-28 xl:mb-0"
 
 const Testimonials = () => (
   <section className={sectionStyle}>
